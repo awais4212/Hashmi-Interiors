@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hashmi Interior</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="Hashmi Interior.png" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #2E2E2E;
+      color: #FAF9F6;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1C1C1C;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      color: #FAF9F6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #D4AF37;
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem;
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about {
+      max-width: 1100px;
+      background-color: #FAF9F6;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+      color: #2E2E2E;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1C1C1C;
+    }
+
+    ul.services-list {
+      list-style-type: disc;
+      padding-left: 2rem;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .flex-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .flex-gallery img {
+      width: 230px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .flex-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .flex-gallery img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Hashmi Interior.png" alt="Hashmi Interior Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about">
+      <div class="flex-gallery">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Interior Sample 1" />
+        <img src="hashmi interior.avif" />
+        <img src="interior.avif" />
+      </div>
+
+      <p class="intro">
+        <strong>Hashmi Interior</strong> is a creative interior design studio based in Bahria Town, Karachi, offering elegant and customized solutions for both residential and commercial spaces. With a focus on modern aesthetics, functionality, and client satisfaction, we aim to transform everyday spaces into personalized works of art.
+        Whether it’s a new build, a renovation, or a single room makeover, our team is dedicated to bringing your vision to life with professionalism and attention to detail.
+      </p>
+
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>Residential Interior Design</li>
+        <li>Office & Commercial Space Planning</li>
+        <li>3D Visualization & Mood Boards</li>
+        <li>Custom Furniture & Décor Consultation</li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
