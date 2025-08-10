@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(30, 2, 52), rgb(4, 47, 177));
+    color: white;
+    padding: 18px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+
+}
+
+.hero {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa, #2a0d65);
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    align-items: center;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-left .one {
+    /* border: 2px solid black; */
+    font-size: 60px;
+    color: rgb(30, 2, 52);
+    font-weight: bolder;
+}
+
+.hero-left .two {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hero-right {
+    /* border: 2px solid black; */
+}
+
+.hero-right img {
+    border-radius: 14px;
+    width: 25vw;
+}
+
+.btn {
+    background: linear-gradient(135deg, #2980b9, #2a0d65);
+    color: #fff;
+    padding: 7px 9px;
+    margin: 0 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #2a0d65, #2980b9);
+    transform: scale(1.1);
+}
+
+.button-container {
+    padding: 9px 0;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #2980b9, #46acd1, #2a0d65);
+    padding: 8px;
+    border-top: 2px solid #2a0d65;
+    
+
+
+}
+
+.project-img img {
+    width: 50vw;
+    border-radius: 12px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.project-info .text {
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.project-info .p {
+    padding: 12px 0;
+}
+.btn1{
+    margin: 8px;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.footer{
+    background-image: linear-gradient(to right,  rgb(4, 47, 177), rgb(30, 2, 52));
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px){
+    /* body{
+        background-color: red;
+    } */
+
+    nav{
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    }
+    .hero-right img{
+    width: auto;
+    height: 30vh;
+    border-radius: 15px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        gap: 13px;
+    }
+    .hero-left{
+        align-items: center;
+    }
+    .hero-left .one{
+            align-items: center;
+    font-size: x-large;
+    }
+    .hero-left .two {
+    font-size: large;
+}
+}
