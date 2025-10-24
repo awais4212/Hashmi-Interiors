@@ -40,7 +40,13 @@ It demonstrates the use of **HTML** and **CSS** for layout, style, and responsiv
 | **HTML5** | For creating structured and semantic web pages |
 | **CSS3** | For beautiful styling and responsive design |
 
+
 ---
 
-## 📂 Project Structure
+## 🚀 How to Run the Project
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/awais4212/Hashmi-Interiors.git
+
 
